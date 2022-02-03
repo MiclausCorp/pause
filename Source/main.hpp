@@ -30,6 +30,11 @@
 #ifndef PAUSE_MAIN_HPP
 #define PAUSE_MAIN_HPP
 
+/* Name Mangling */
+#ifdef __cplusplus
+    extern "C" {
+#endif
+
 /* Include Directive */
 #pragma region "Include Directive"
 #include <stdio.h>
@@ -49,5 +54,10 @@
 #pragma region "Methods"
 int main(void);
 #pragma endregion
+
+/* Name Mangling */
+#ifdef __cplusplus
+    }
+#endif
 
 #endif /* PAUSE_MAIN_HPP */
